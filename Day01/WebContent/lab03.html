@@ -10,7 +10,16 @@
 		$("#clickBtn").on("click",function(){
 			$("#octet1,#octet2,#octet3,#octet4").attr("disabled","disabled");
 		});
-		$("#octet1").on("keyup",function(){
+		$("#octet1,#octet2,#octet3").on("keyup",function(){
+			if($(this).val().length == 3)
+				$(this).next().focus();
+		});
+		$("#octet4").on("keyup",function(){
+			if($(this).val().length == 3)
+				$("#clickBtn").focus();
+		});
+		
+/* 		$("#octet1").on("keyup",function(){
 			if($("#octet1").val().length == 3)
 				$("#octet2").focus();
 		});
@@ -24,8 +33,8 @@
 		});
 		$("#octet4").on("keyup",function(){
 			if($("#octet4").val().length == 3)
-				$("#clickBtn").focus();
-		});
+				$("#octet4").focus();
+		}); */
 	});
 </script>
 </head>
