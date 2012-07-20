@@ -1,0 +1,17 @@
+Implement a simple guessing game in JavaScript. Your code will generate a random number between 1 and 100. The user plays the game till he guesses the number correct. For example, if the number generated is 79, then the user starts playing as shown below.
+
+--> 50
+Aim higher
+--> 75
+Aim higher
+--> 90
+Aim Lower
+--> 80
+Aim lower
+--> 79
+You have got it in 5 attempts
+
+The UI will have a textbox to enter the number and a button. You can display the result in a simple header tag.
+
+Note:
+Create a GuessingGame class with the logic in it. Keep the UI and the core logic separate
