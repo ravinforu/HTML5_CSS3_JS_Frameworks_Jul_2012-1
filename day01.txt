@@ -1,0 +1,51 @@
+HTML 5??? and CSS3
+	rich support for media activities without thirdy party
+	What???
+		different type of input tags
+			date,email
+		video audio support
+		built-in validations
+	data storage
+	web sql
+	web workers
+	web sockets
+	offline applications
+	geo location
+
+
+Mobile applications
+	native apps
+		use native API 
+		create executables and install in the device
+	
+		iOS
+			Objective-C,XCode,Cocoa touch
+			.ipa file
+		Android
+			Java, Eclipse, Android SDK
+			.apk file
+		Blackberry	
+			Java, Eclipse, RIM sdk
+			.cod file
+		Windows Phone
+			C#, Visual Studio, Mango
+			
+	
+	mobile web apps
+		host in Web server
+		access it from mobile web browsers
+		responds to touch, tap, pinch, swipe events
+		application should orient automatically
+		support for devices
+		Sencha Touch, jQuery Mobile, jQTouch, Dojo mobile
+
+PhoneGap
+	convert the mobile web app to a native app
+	generate native executables on different platforms	
+
+
+
+	
+		
+
+	
