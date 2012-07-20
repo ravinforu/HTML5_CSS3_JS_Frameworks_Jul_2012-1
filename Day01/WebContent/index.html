@@ -2,7 +2,18 @@
 <html>
 <head>
 	<script>
-		g();//Error
+		$().ready(function(){alert("Horror");});
+		
+		function $(){
+			return {
+				ready : function(fn){
+							fn();
+						}
+			};
+		}
+	
+	
+		//g();//Error
 		var g = function(){};
 
 		f();//Works fine
