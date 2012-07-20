@@ -2,6 +2,12 @@
 <html>
 <head>
 	<script>
+		g();//Error
+		var g = function(){};
+
+		f();//Works fine
+		function f(){}
+	
 		//btn.on("click",function(){});
 		function attendTraining(mode){
 			mode();
