@@ -1,0 +1,10 @@
+1) Create 2 textboxes number1 and number2
+2) Implement 2 functions add and subtract that accept no arguments
+3) Create 2 checkboxes for add and subtract
+4) Create a button "results"
+
+When you enter the numbers in the textboxes, select the checkboxes (either add, subtract or both) and hit results button you have to display the results of computations.
+
+Note:
+Implement using closures
+
