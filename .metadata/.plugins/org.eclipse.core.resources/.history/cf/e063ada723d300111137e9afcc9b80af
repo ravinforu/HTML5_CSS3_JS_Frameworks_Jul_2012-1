@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		//setItem,getItem,removeItem
+		if(localStorage.getItem("welcome"))
+			alert("Loaded from localStorage-->" + localStorage.getItem("welcome"));
+		else{
+			localStorage.setItem("welcome","Welcome to Banca Sella");
+			alert("Just created --> " + localStorage.getItem("welcome"));			
+		}
+			
+		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

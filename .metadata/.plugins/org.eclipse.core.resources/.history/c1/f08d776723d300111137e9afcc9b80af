@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		//setItem,getItem,removeItem
+		localStorage.setItem("welcome","Welcome to Banca Sella");
+		alert(localStorage.getItem("welcome"));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
