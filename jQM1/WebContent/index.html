@@ -6,6 +6,9 @@
 	<script src="jquery.mobile-1.1.1.js"></script>
 	<script>
 		$().ready(function(){
+			$("#homeScreen").bind("pageinit",function(){
+				//do something
+			});
 			$("#clickBtn").on("click",function(){
 				$.mobile.changePage("#homeScreen",{
 					transition : "slide"
@@ -39,8 +42,8 @@
 			<h2>Shop all departments</h2>
 		</div>
 		<div data-role="content" data-theme="b">
-			<div data-role="collapsible-set">
-				<div data-role="collapsible">
+			<div data-role="collapsible-set" >
+				<div data-role="collapsible" data-collapsed-icon="arrow-r" data-content-theme="c">
 					<h3>Books</h3>
 					<ul data-role="listview" data-inset="true">
 						<li>Books</li>
