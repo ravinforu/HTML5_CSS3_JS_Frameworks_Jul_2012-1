@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-1.7.2.js"></script>
+	<script>
+		function sendAjaxRequest(){
+			$.ajax({
+				url : "server.jsp",
+				data : {
+					name : $("#nameText").val()
+				},
+				type : "GET",
+				success : function(response){
+					alert(response);
+				},
+				error : function(xhr){
+					alert("Error " + xhr.statusText);
+				}
+			});
+		}
+		$().ready(function(){
+			$("#clickBtn").on("click",sendAjaxRequest);
+		});
+	</script>
+</head>
+<body>
+	Name <input type="text" id="nameText"><br/>
+	<input type="button" value="Click" id="clickBtn">
+</body>
+</html>

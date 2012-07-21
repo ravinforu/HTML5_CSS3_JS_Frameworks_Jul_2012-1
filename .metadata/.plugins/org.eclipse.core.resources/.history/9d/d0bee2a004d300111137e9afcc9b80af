@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="jquery.mobile-1.1.1.css">
+	<script src="jquery-1.7.2.js"></script>
+	<script src="jquery.mobile-1.1.1.js"></script>
+	<script>
+		$().ready(function(){
+			$("#clickBtn").on("click",function(){
+				$.mobile.changePage("#homeScreen",{
+					transition : "pop"
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<div data-role="page" id="mainScreen">
+		<div data-role="header" data-theme="b">
+			<h3>Welcome to Banca Sella</h3>
+		</div>
+		<div data-role="content" data-theme="d">
+			<p>
+				This is a sample jQM page<br/>
+				We are designing a mobile app
+			</p>
+			<div data-role="fieldcontain">
+				<label>Name</label>
+				<input type="text">
+			</div>
+			<div data-role="button" id="clickBtn">Click</div>
+		</div>
+		<div data-role="footer" data-theme="a">
+			<p>Copyrights reserved,2012.</p>
+		</div>
+	</div>
+	<div data-role="page" id="homeScreen">Page II</div>
+	<div data-role="page">Page III</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-1.7.2.js"></script>
+	<script>
+		function populateCities(lst){
+			$("#cities").html("");
+			for(var i=0;i<lst.length;i++){
+				var option = "<option>" + lst[i] + "</option>";
+				$("#cities").append(option);
+			}
+		}
+		var cities = [];
+		function loadCities(){
+			if(!cities[$("#countries").val()]){
+					$.ajax({
+						url : "cities.jsp",
+						data : {
+							country : $("#countries").val()
+						},
+						dataType : "json",
+						success : function(response){
+							$("#cities").html("");
+							cities[$("#countries").val()] = response.cities;
+							populateCities(response.cities);
+						}
+					});
+			}
+			else{
+				console.log("Loading locally");
+				$("#cities").html("");
+				var citiesList = cities[$("#countries").val()];
+				for(var i=0;i<citiesList.length;i++){
+					var option = "<option>" + citiesList[i] + "</option>";
+					$("#cities").append(option);
+				}
+			}
+		}
+		function loadCountries(){
+			$.ajax({
+				url : "countries.jsp",
+				dataType : "json",
+				success : function(response){
+					for(var i=0;i<response.countries.length;i++){
+						var option = "<option>" + response.countries[i] + "</option>";
+						$("#countries").append(option);
+					}
+				}
+			});
+		}
+		$().ready(function(){
+			loadCountries();
+			$("#countries").on("change",loadCities);
+		});
+	</script>
+</head>
+<body>
+	Countries <select id="countries">
+		<option>--SELECT--</option>
+	</select><br/>
+	Cities <select id="cities"></select>
+</body>
+</html>

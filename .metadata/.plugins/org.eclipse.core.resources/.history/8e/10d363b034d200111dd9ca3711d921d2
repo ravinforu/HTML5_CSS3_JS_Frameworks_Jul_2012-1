@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function Car(){
+			
+		}
+		var c1 = new Car();
+		var c2 = new Car();
+	</script>
+</head>
+<body>
+</body>
+</html>

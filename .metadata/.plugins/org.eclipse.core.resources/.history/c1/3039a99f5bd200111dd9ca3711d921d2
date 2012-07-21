@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-1.7.2.js"></script>
+	<script>
+		$().ready(function(){
+			
+		});
+	</script>
+</head>
+<body>
+	<input type="button" value="Click" id="clickBtn">
+</body>
+</html>

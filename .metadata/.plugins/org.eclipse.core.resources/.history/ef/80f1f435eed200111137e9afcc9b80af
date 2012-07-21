@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var str1 = "alert('hello');";
+		
+		var output = "{output:'Sam'}";
+		//eval(output);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

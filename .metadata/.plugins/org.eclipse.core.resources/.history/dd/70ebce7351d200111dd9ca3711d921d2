@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-1.7.2.js"></script>
+	<script>
+		function add(){
+			
+		}
+		$().ready(function(){
+			$("#clickBtn").on("click",add);
+
+			$("#header1").
+				css("color","red").
+				attr("disabled","disabled");
+			
+			$("h1").each(function(){
+				alert($(this).text());
+			});
+		});
+	</script>
+</head>
+<body>
+	<p></p>
+	<input type="button" value="Click" id="click">
+	
+	
+	<h1 id="header1">header 1</h1>
+	<h1 id="header2">header 2</h1>
+	<h1 id="header3">header 3</h1>
+</body>
+</html>

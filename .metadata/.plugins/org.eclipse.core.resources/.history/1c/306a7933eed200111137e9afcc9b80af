@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var output = "{output:'Sam'}";
+		eval(output);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

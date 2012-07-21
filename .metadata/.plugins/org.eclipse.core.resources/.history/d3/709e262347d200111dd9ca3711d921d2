@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-1.7.2.js"></script>
+	<script>
+		//Selector expressions
+		$().ready(function(){
+			$("#clickBtn").on("click",function(){
+				var name = $("#nameText").val();
+				alert(name);
+				var header1 = $("h1#header1").html();
+				alert(header1);
+				alert($("h1.header2").text());
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1 id="header1">
+		<p>This is header 1</p>
+	</h1>
+	<h1 class="header2">This is header 2</h1>
+	Name <input type="text" id="nameText">
+	<br/>
+	<input type="button" id="clickBtn" value="Click">
+</body>
+</html>

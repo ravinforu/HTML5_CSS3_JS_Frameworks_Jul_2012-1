@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-1.7.2.js"></script>
+	<script>
+		$().ready(function(){
+			alert($("h1").text());
+		});
+	</script>
+</head>
+<body>
+	<h1 id="header1">header 1</h1>
+	<h1 id="header2">header 2</h1>
+	<h1 id="header3">header 3</h1>
+</body>
+</html>

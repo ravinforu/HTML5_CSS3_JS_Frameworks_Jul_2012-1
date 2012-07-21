@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.7.2.js"></script>
+<script>
+	function addRecords(){
+		if($("#resultsTBL").length == 0)
+			createTable();
+		addRow($("#nameText").val(),$("#ageText").val());
+	}
+	function createTable(){
+		var table = "<table border='1'>";
+		table += "<thead>";
+		table += "<tr><td>Name</td><td>Age</td></tr>";
+		table += "</thead>";
+		table += "</table>";
+	}
+	$().ready(function() {
+		$("#addBtn").on("click",addRecords);	
+	});
+</script>
+</head>
+<body>
+	Name <input type="text" id="nameText">
+	<br /> 
+	Age  <input type="text" id="ageText">
+	<br />
+	<input type="button" value="Add" id="addBtn">
+	<div id="results"></div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.7.2.js"></script>
+<script>
+	$().ready(function() {
+			
+	});
+</script>
+</head>
+<body>
+	Name <input type="text" id="nameText">
+	<br /> 
+	Age  <input type="text" id="ageText">
+	<br />
+	<input type="button" value="Add" id="addBtn">
+	<div id="results"></div>
+</body>
+</html>

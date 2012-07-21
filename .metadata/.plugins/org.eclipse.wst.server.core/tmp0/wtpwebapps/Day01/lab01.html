@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var operations = [];
+		function add(){
+			var total = 0;
+			for(var i=0;i<arguments.length;i++){
+				if(!isNaN(arguments[i]))
+					total += arguments[i];
+			}
+			return total;
+		}
+		function subtract(){
+			if(arguments.length == 2){
+				return arguments[0] - arguments[1];
+			}
+			return 0;
+		}
+		function addChkChanged(){
+			var chk = document.getElementById("addChk");
+			if(chk.checked)
+				operations["add"] = add;
+			else
+				operations["add"] = null;
+		}
+		function subtractChkChanged(){
+			var chk = document.getElementById("subtractChk");
+			if(chk.checked)
+				operations["subtract"] = subtract;
+			else
+				operations["subtract"] = null;			
+		}
+		function computeResults(){
+			var num1 = parseInt(document.getElementById("num1").value);
+			var num2 = parseInt(document.getElementById("num2").value);
+			var results = "";
+			if(operations["add"] != null)
+				results += "Sum: " + operations["add"](num1,num2) + "<br/>";
+			if(operations["subtract"] != null)
+					results += "Difference: " + operations["subtract"](num1,num2) + "<br/>";
+			document.getElementById("results").innerHTML = results;		
+		}
+	</script>
+</head>
+<body>
+	<h1>Lab 01</h1>
+	Number 1<input type="text" id="num1"><br/>
+	Number 2<input type="text" id="num2"><br/>
+	Add <input type="checkbox" id="addChk" onchange="addChkChanged()">
+	Subtract <input type="checkbox" id="subtractChk" onchange="subtractChkChanged()">
+	<br/>
+	<input type="button" value="Results" onclick="computeResults();">
+	<h5 id="results">
+	
+	</h5>
+	
+</body>
+</html>

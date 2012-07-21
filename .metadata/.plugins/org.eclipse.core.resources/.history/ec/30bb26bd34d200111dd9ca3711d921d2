@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function Car(theModel,theYearOfMake){
+			
+		}
+		var c1 = new Car("Santro",2012);
+		var c2 = new Car("City",2011);
+	</script>
+</head>
+<body>
+</body>
+</html>

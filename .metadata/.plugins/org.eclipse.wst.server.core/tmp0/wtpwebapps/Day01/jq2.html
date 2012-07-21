@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-1.7.2.js"></script>
+	<script>
+		//$("div span p")
+		function remove(){
+			$("#header1").remove();
+		}
+		function add(){
+			//$("p").prepend("<input type='text'>");
+			$("p").append("<input type='text'>");
+		}
+		$().ready(function(){
+			$("#remove").on("click",remove);
+			$("#click").on("click",add);
+
+			$("#header1").
+				css("color","red").
+				attr("disabled","disabled");
+			
+			$("h1").each(function(){
+				alert($(this).text());
+			});
+		});
+	</script>
+</head>
+<body>
+	<p>Paragraph</p>
+	<input type="button" value="Click" id="click">
+	<input type="button" value="Remove" id="remove">
+	
+	<h1 id="header1">header 1</h1>
+	<h1 id="header2">header 2</h1>
+	<h1 id="header3">header 3</h1>
+</body>
+</html>

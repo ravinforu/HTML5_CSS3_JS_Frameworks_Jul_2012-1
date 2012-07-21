@@ -1,0 +1,4 @@
+<%
+	String header = request.getHeader("user-agent");
+	out.println(header);
+%>

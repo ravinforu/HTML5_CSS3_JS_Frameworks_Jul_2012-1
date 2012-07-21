@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-1.7.2.js"></script>
+	<script>
+		function sendAjaxRequest(){
+			
+		}
+		$().ready(function(){
+			$("#clickBtn").on("click",sendAjaxRequest);
+		});
+	</script>
+</head>
+<body>
+	Name <input type="text" id="nameText"><br/>
+	<input type="button" value="Click" id="clickBtn">
+	<h2 id="resultsH2"></h2>
+</body>
+</html>

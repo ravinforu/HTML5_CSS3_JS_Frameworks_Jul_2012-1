@@ -1,0 +1,31 @@
+browser support for jQM
+	rendering engine
+
+	Webkit (Chrome and safari)
+		90-95% HTML5 compliant
+	Gecko (Firefox)
+	MS	(IE)
+	Opera	(Opera)
+
+	Windows Phone and Blacberry 7.0 & above webkit 	browsers
+
+
+	JS engine(interpreter)
+		chrome(V8)
+		Firefox(SpiderMonkey)
+
+Http request
+	header USER_AGENT
+
+
+
+Design desktop
+design for mobile portrait mode
+design for mobile landscape mode
+design for tablet
+
+	
+
+
+jQuery Mobile
+	

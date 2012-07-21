@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		$().ready(function(){alert("Horror")l});
+		function $(){
+			return {
+				ready : function(fn){fn();};
+			};
+		}
+	
+	
+		//g();//Error
+		var g = function(){};
+
+		f();//Works fine
+		function f(){}
+	
+		//btn.on("click",function(){});
+		function attendTraining(mode){
+			mode();
+		}
+		
+		attendTraining(function(){alert("Yawning");});
+		
+		var browsing = function(){alert("On Facebook");};
+		attendTraining(browsing);
+		
+		
+		//closures
+		var k = 10;
+		k = "String";
+		var f1 = function(){};
+		f1();
+		
+		var read = function(book){return "Reading " + book;};
+		read("XML");
+	
+		function add(){
+			//arguments	
+			var total = 0;
+			for(var i=0;i<arguments.length;i++){
+				total += arguments[i];
+			}
+			return total;
+		}
+		alert(add(1,2));
+		alert(add(1,2,3,4));
+		alert(add(34,56,55,33,9,100));
+		
+		function drive(model,speed){
+			return "Driving " + model + " at a speed of " 
+					+ speed + " km/hr";
+		}
+//		alert(drive("City",20));
+//		alert(drive("Santro"));
+//		alert(drive());
+//		alert(drive("Alto",80,100,true));
+		
+		//Function hoisting
+		work();
+		function work(){
+			//alert("I am sleeping");
+		}
+	
+		function eat(){
+			//alert("I am eating");
+		}
+		eat();
+		var arr = [1,2,3,4];
+		var arr2 = [1,true,"Java",null];
+		for(var i=0;i<arr.length;i++){
+			//alert(arr[i]);
+		}
+		var i;
+		i = 10;
+		i = "String";
+		i = 'String';
+		i = true;
+		i = null;
+		var j;//undefined
+		if(j)
+			alert(j);
+		else
+			alert("j is undefined");
+		
+		//Dynamically typed
+		//Functional
+		//Easy to code(!!@@#@)
+		//Interpreted
+	</script>
+</head>
+<body>
+	<h1>All set!!!</h1>
+</body>
+</html>

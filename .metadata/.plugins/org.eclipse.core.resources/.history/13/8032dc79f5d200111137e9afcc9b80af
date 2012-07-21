@@ -1,0 +1,3 @@
+<%
+	String countries = "{\"countries\":[\"India\",\"USA\",\"UK\"]}";
+%>

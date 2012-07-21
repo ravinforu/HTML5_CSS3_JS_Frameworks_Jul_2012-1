@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-1.7.2.js"></script>
+	<script>
+		function loadCountries(){
+			$.ajax({
+				url : "countries.jsp",
+				dataType : "json",
+				success : function(response){
+					for(var i=0;i<response.countries.length;i++){
+						var option = "<option>" + response.countries[i] + "</option>";
+						$("#countries").append(option);
+					}
+				}
+			});
+		}
+		$().ready(function(){
+			loadCountries();
+		});
+	</script>
+</head>
+<body>
+	Countries <select id="countries"></select><br/>
+	Cities <select id="cities"></select>
+</body>
+</html>

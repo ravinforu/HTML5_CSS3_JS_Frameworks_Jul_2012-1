@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var game = {
+				target : Math.floor(Math.random()*100),
+				attempts : 0,
+				message : "",
+				play : function(guess){
+					this.attempts++;
+					if(guess > this.target)
+						message = "Aim Lower";
+					if(guess < target)
+						message = "Aim Higher";
+					if(guess == target)
+						message = "You have got it in " + attempts + " attempts";
+				}
+		};
+		function play(){
+			var guess = parseInt(document.getElementById("guess").value);
+			game.play(guess);
+			document.getElementById("message").innerHTML = game.getMessage();
+			document.getElementById("attempts").innerHTML = "Attempts : " + game.getAttempts();
+		}
+	</script>
+</head>
+<body>
+	<h1>Lab 02</h1>
+	Enter your guess<input type="text" id="guess"><br/>
+	<input type="button" value="Guess" onclick="play();">
+	<h5 id="message"></h5>
+	<h5 id="attempts"></h5>
+</body>
+</html>

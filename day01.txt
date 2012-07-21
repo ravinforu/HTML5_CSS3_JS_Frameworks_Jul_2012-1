@@ -1,3 +1,24 @@
+val()
+val("")
+
+html()
+html("")
+
+text()
+text("")
+
+attr("")
+attr("","")
+AJAX
+	Asynchronous JavaScript and XML
+	Traditional app
+		client and server exchange pages	
+		synchronous
+	RIA
+		client and server exchange data
+		asynchronous (client doesn't wait for response)
+	
+	XMLHttpRequest
 HTML 5??? and CSS3
 	rich support for media activities without thirdy party
 	What???

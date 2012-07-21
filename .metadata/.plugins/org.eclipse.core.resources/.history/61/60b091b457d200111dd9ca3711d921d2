@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.7.2.js"></script>
+<script>
+	function addRecords(){
+		if($("#resultsTBL").length == 0){
+			createTable();
+			createRemoveButton();
+		}
+		addRow($("#nameText").val(),$("#ageText").val());
+	}
+	function createRemoveButton(){
+		$("#results").append("<input type='button' value='remove' id='removeBtn'>");
+		$("#removeBtn").on("click",removeRecords);
+	}
+	function addRow(name,age){
+		var row = "<tr>";
+		row += "<td>" + name + "</td>";
+		row += "<td>" + age + "</td>";
+		row += "<td><input type='checkbox'></td>";
+		row += "</tr>";
+		$("table#resultsTBL tbody").append(row);
+	}
+	function createTable(){
+		var table = "<table border='1' id='resultsTBL'>";
+		table += "<thead>";
+		table += "<tr><td>Name</td><td>Age</td><td>Remove</td></tr>";
+		table += "</thead>";
+		table += "<tbody></tbody>";
+		table += "</table>";
+		$("#results").append(table);
+	}
+	$().ready(function() {
+		$("#addBtn").on("click",addRecords);	
+	});
+</script>
+</head>
+<body>
+	Name <input type="text" id="nameText">
+	<br /> 
+	Age  <input type="text" id="ageText">
+	<br />
+	<input type="button" value="Add" id="addBtn">
+	<div id="results"></div>
+</body>
+</html>

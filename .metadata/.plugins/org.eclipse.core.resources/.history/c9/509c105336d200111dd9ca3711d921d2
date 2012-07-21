@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		//JSON (JavaScript Object Notation)
+		var p1 = {
+					name : "Sam",
+					age : 12,
+					work : function(){}
+				};
+		alert(p1.name + ", " + p1.age);
+		p1.work();
+		var book1 = {
+						title : "Applied XML",
+						price : 200,
+						publishers : ["Wiley","Tata","Oreilly"]
+				};
+		alert(book1.publishers[1]);
+		
+		
+		
+		function Car(theModel,theYearOfMake){
+			this.model = theModel;
+			this.yearOfMake = theYearOfMake;
+			if(Car.numberOfCars)
+				Car.numberOfCars++;
+			else
+				Car.numberOfCars = 1;
+			
+			this.drive = function(){
+				try{
+					alert("Driving " + this.model);	
+				}
+				catch(er){
+					alert("Error : " + er.message);
+				}
+			}
+		}
+		var c1 = new Car("Santro",2012);
+		alert(c1.model + ", " + c1.yearOfMake);
+		c1.drive();
+		
+		var c2 = new Car("City",2011);
+		alert(c2.model + ", " + c2.yearOfMake);
+		c2.drive();
+		alert(Car.numberOfCars);
+		
+	</script>
+</head>
+<body>
+</body>
+</html>

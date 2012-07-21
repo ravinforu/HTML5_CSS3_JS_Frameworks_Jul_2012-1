@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function Car(theModel,theYearOfMake){
+			this.model = theModel;
+			this.yearOfMake = theYearOfMake;
+		}
+		var c1 = new Car("Santro",2012);
+		alert(c1.model + ", " + c1.yearOfMake);
+		
+		var c2 = new Car("City",2011);
+		alert(c2.model + ", " + c2.yearOfMake);
+	</script>
+</head>
+<body>
+</body>
+</html>

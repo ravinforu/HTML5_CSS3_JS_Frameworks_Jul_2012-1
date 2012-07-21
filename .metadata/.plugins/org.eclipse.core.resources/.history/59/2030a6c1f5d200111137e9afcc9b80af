@@ -1,0 +1,3 @@
+<%
+	String cities = "{\"cities\":[\"Chennai\",\"Mumbai\",\"Cochin\"]}";
+%>
