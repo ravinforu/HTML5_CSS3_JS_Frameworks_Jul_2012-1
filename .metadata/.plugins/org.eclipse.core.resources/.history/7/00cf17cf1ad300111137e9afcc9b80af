@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="jquery.mobile-1.1.1.css">
+	<script src="jquery-1.7.2.js"></script>
+	<script src="jquery.mobile-1.1.1.js"></script>
+	<script>
+		function loadCountries(){
+			
+		}
+		function showHomeScreen(){
+			$.mobile.changePage("#homeScreen");
+		}
+		function login(){
+			$.ajax({
+				url : "login.jsp",
+				data : {
+					username : $("#userName").val(),
+					password : $("#password").val()
+				},
+				success : function(response){
+					if(response == "success"){
+						showHomeScreen();
+					}
+					else
+						alert(response);
+				}
+			});
+		}
+		$().ready(function(){
+			$("#loginBtn").on("click",login);	
+			$("#homeScreen").bind("pageinit",loadCountries);
+		});
+	</script>
+</head>
+<body>
+	<div data-role="page" id="mainScreen">
+		<div data-role="header" data-theme="b">
+			<h3>Welcome to Banca Sella</h3>
+		</div>
+		<div data-role="content" data-theme="d">
+			<div data-role="fieldcontain">
+				<label>User name</label>
+				<input type="text" id="userName">
+			</div>
+			<div data-role="fieldcontain">
+				<label>Password</label>
+				<input type="password" id="password">
+			</div>
+			<div data-role="button" id="loginBtn">Login</div>
+		</div>
+		<div data-role="footer" data-theme="a">
+			<p>Copyrights reserved,2012.</p>
+		</div>
+	</div>
+	<div data-role="page" id="homeScreen">
+		<div data-role="header">
+			<h2>Welcome home</h2>
+		</div>
+		<div data-role="content" data-theme="b">
+			<div data-role="collapsible-set" >
+				<div data-role="collapsible">
+					<h3>Countries</h3>
+					<ul data-role="listview" id="countries" data-inset="true">
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-theme="a">
+			<p>Copyrights reserved,2012.</p>
+		</div>
+	</div>
+	<div data-role="page">Page III</div>
+</body>
+</html>

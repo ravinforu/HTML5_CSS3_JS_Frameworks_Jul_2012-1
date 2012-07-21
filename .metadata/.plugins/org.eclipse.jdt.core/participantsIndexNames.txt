@@ -3,3 +3,5 @@ C:\Users\prabhu.E4LJBSL3AUMKO\Dropbox\Training_Programs\HTML5_WS\HTML5_CSS3_JS_F
 \Day01\src
 C:\Users\prabhu.E4LJBSL3AUMKO\Dropbox\Training_Programs\HTML5_WS\HTML5_CSS3_JS_Frameworks_Jul_2012\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2910465814.index
 \Day02\src
+C:\Users\prabhu.E4LJBSL3AUMKO\Dropbox\Training_Programs\HTML5_WS\HTML5_CSS3_JS_Frameworks_Jul_2012\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1754967789.index
+\jQM1\src

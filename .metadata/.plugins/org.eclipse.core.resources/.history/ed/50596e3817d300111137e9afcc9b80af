@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="jquery.mobile-1.1.1.css">
+	<script src="jquery-1.7.2.js"></script>
+	<script src="jquery.mobile-1.1.1.js"></script>
+	<script>
+		$().ready(function(){
+			$("#homeScreen").bind("pageinit",function(){
+				//do something
+			});
+			$("#clickBtn").on("click",function(){
+				$.mobile.changePage("#homeScreen",{
+					transition : "slide"
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<div data-role="page" id="mainScreen">
+		<div data-role="header" data-theme="b">
+			<h3>Welcome to Banca Sella</h3>
+		</div>
+		<div data-role="content" data-theme="d">
+			<p>
+				This is a sample jQM page<br/>
+				We are designing a mobile app
+			</p>
+			<div data-role="fieldcontain">
+				<label>Name</label>
+				<input type="text">
+			</div>
+			<div data-role="button" id="clickBtn">Click</div>
+		</div>
+		<div data-role="footer" data-theme="a">
+			<p>Copyrights reserved,2012.</p>
+		</div>
+	</div>
+	<div data-role="page" id="homeScreen">
+		<div data-role="header">
+			<h2>Shop all departments</h2>
+		</div>
+		<div data-role="content" data-theme="b">
+			<div data-role="collapsible-set">
+				<div data-role="collapsible">
+					<h3>Books</h3>
+					<ul data-role="listview" data-inset="true">
+						<li>Books</li>
+						<li>Textbooks</li>
+						<li>Magazines</li>
+					</ul>
+				</div>
+				<div data-role="collapsible">
+					<h3>Kindle</h3>
+					<ul data-role="listview" data-inset="true">
+						<li>Kindle Touch</li>
+						<li>Kindle Fire</li>
+						<li>e-books</li>
+					</ul>					
+				</div>
+				<div data-role="collapsible">
+					<h3>Electronics</h3>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-theme="a">
+			<p>Copyrights reserved,2012.</p>
+		</div>
+	</div>
+	<div data-role="page">Page III</div>
+</body>
+</html>

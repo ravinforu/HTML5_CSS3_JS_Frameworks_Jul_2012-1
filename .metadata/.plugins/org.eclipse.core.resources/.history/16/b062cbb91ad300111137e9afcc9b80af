@@ -1,0 +1,8 @@
+<%
+	String userName = request.getParameter("username");
+	String password = request.getParameter("password");
+	if("admin".equalsIgnoreCase(userName) && "admin".equals(password))
+		out.println("success");
+	else
+		out.println("failure");
+%>
