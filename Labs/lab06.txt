@@ -1,0 +1,9 @@
+Create "lab06.html" file.
+You will have the following screens in jQuery Mobile.
+-->A login screen with username and password fields and a login button. 
+-->On clicking the login button, send the credentials to login.jsp which checks if the username and password are equal to "admin" and returns a message ("success" or "failure").
+-->If authentication fails show an error message "Invalid credentials"
+-->If the authentication succeeds show the countries screen.
+The countries screen constructs a list of countries from "countries.jsp" that we used in lab05.
+-->On clicking each country show the cities screen with the list of the cities displayed from cities.jsp(use cities.jsp from lab05).
+-->You should have a back button in the cities screen to go back to the countries screen.
