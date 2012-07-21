@@ -1,0 +1,13 @@
+Create a ajaxLab.html file that has 2 list boxes Country and Cities.
+
+The country list box will be populated with the following countries loaded from countries.jsp file in JSON format.
+India, USA, UK.
+
+On selecting a country, the cities of that country will get loaded from "cities.jsp".
+You can use the following cities.
+India-->Chennai,Cochin,Mumbai
+USA-->NY,NJ,Houston
+UK-->London,Bristol,Essex
+
+Note:
+The cities for a particular country will be loaded from the server only once. After that, it will get loaded from the local copy only.
