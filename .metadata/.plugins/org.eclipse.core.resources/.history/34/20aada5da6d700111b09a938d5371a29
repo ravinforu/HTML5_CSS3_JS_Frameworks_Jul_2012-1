@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="jquery.mobile-1.1.1.css">
+	<script src="jquery-1.7.2.js"></script>
+	<script src="jquery.mobile-1.1.1.js"></script>
+</head>
+<body>
+	<div data-role="page" id="loginScreen">
+		<div data-role="header">
+			<h1>Welcome to Banca Sella</h1>
+		</div>
+		<div data-role="content">
+			<div data-role="fieldcontain">
+				<label>User name</label>
+				<input type="text" id="userNameText">
+			</div>
+		</div>
+		<div data-role="footer">
+			<p>Copyrights reserved, 2012.</p>
+		</div>
+	</div>
+	<div data-role="page" id="countriesScreen">
+		<div data-role="header">
+			<h1></h1>
+		</div>
+		<div data-role="content"></div>
+		<div data-role="footer">
+			<p>Copyrights reserved, 2012.</p>
+		</div>
+	</div>
+	<div data-role="page" id="citiesScreen">
+		<div data-role="header">
+			<h1></h1>
+		</div>
+		<div data-role="content"></div>
+		<div data-role="footer">
+			<p>Copyrights reserved, 2012.</p>
+		</div>
+	</div>
+</body>
+</html>
