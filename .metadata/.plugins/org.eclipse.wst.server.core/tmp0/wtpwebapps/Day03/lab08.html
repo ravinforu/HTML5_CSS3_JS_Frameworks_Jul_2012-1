@@ -58,12 +58,12 @@
 			var query = "select * from countries";
 			db.transaction(function(txn){
 				txn.executeSql(query,[],function(tx,results){
-					var count = results.rows.length;
-					for(var i=0;i<count;i++){
-						var name = results.rows.item(i).name;
-						countries.push(name);
-					}
-					populateCountriesList(countries);
+						var count = results.rows.length;
+						for(var i=0;i<count;i++){
+							var name = results.rows.item(i).name;
+							countries.push(name);
+						}
+						populateCountriesList(countries);
 				});
 			});
 		}

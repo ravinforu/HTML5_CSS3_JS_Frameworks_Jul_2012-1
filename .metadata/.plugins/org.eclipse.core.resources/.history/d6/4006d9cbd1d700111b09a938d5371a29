@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html manifest="lab09.manifest">
+<head>
+<link rel="stylesheet" href="jquery.mobile-1.1.1.css">
+<script src="jquery-1.7.2.js"></script>
+<script src="jquery.mobile-1.1.1.js"></script>
+<script>
+		alert(navigator.onLine);
+		var serverDown = false;
+		window.applicationCache.addEventListener("error", function(e) {
+			  serverDown = true;
+		});
+		function saveCountries(countries){
+			var countriesString = "";
+			for(var i=0;i<countries.length;i++){
+				if(i == countries.length -1)
+					countriesString += countries[i];
+				else
+					countriesString += countries[i] + ",";
+			}
+			localStorage.setItem("countries",countriesString);
+		}
+		
+		
+		function populateCountriesList(countries){
+			for(var i=0;i<countries.length;i++){
+				var li = "<li>";
+				li += countries[i]
+				li += "</li>";
+				$("#countriesList").append(li);
+			}
+			$("#countriesList").listview("refresh");
+		}
+		
+		function loadCountriesFromLocalStorage(){
+			var countriesString = localStorage.getItem("countries");
+			var countries = countriesString.split(",");
+			populateCountriesList(countries);
+		}
+		function login(){
+			$.mobile.changePage("#countriesScreen");
+		}
+		function loadCountries(){
+			if(serverDown){
+				loadCountriesFromLocalStorage();
+				$("#msg").html("You're viewing an old copy of the page.You are not connected to the internet.");
+			}
+			else{
+				var userName = $("#userNameText").val();
+				var password = $("#passwordText").val();
+				var url = "login.jsp?username=" + userName + "&password=" + password;
+				$.getJSON(url,function(response){
+					if(response.authentication == "Success"){
+						var countries = response.countries;
+						populateCountriesList(countries);
+						saveCountries(response.countries);
+					}
+				});
+			}
+		}
+		$().ready(function(){
+			$("#loginBtn").on("click",login);
+			$("#countriesScreen").bind("pageinit",loadCountries);
+		});
+	</script>
+</head>
+<body>
+	<div data-role="page" id="loginScreen">
+		<div data-role="header">
+			<h1>Welcome to Banca Sella</h1>
+		</div>
+		<div data-role="content">
+			<div data-role="fieldcontain">
+				<label>User name</label> <input type="text" id="userNameText" value="admin">
+			</div>
+			<div data-role="fieldcontain">
+				<label>Password</label> <input type="password" id="passwordText" value="admin">
+			</div>
+			<div data-role="button" id="loginBtn">Login</div>
+		</div>
+		<div data-role="footer">
+			<p>Copyrights reserved, 2012.</p>
+		</div>
+	</div> 
+	<div data-role="page" id="countriesScreen">
+		<div data-role="header">
+			<h1>Countries</h1>
+			<a data-theme="c" id="logoutLink">Logout</a>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" id="countriesList">
+			</ul>
+			<h2 id="msg"></h2>
+		</div>
+		<div data-role="footer">
+			<p>Copyrights reserved, 2012.</p>
+		</div>
+	</div>
+</body>
+</html>

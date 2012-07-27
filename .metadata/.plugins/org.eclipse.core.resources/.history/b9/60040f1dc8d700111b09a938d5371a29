@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+<head>
+	<script src="sample.js"></script>
+	<script>
+	if (navigator.onLine) {
+		  alert('online')
+		} else {
+		  alert('offline');
+		}
+	</script>
+</head>
+<body>
+	<h1>This is modified page 1</h1>
+</body>
+</html>

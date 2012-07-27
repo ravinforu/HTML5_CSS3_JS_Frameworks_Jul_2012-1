@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+<head>
+	<script src="sample.js"></script>
+	<script>
+	if (navigator.onLine) {
+		  alert('online')
+		} else {
+		  alert('offline');
+		}
+	window.applicationCache.addEventListener("error", function(e) {
+		  alert("Error fetching manifest:you are offline");
+		});
+	</script>
+</head>
+<body>
+	<h1>This is modified page 1</h1>
+</body>
+</html>

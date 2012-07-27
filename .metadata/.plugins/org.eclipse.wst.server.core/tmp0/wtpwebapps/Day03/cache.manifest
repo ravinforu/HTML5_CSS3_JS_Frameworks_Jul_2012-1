@@ -1,0 +1,13 @@
+CACHE MANIFEST
+#version 1.2
+
+CACHE:
+page1.html
+error.html
+
+NETWORK:
+sample.js
+
+FALLBACK:
+page2.html error.html
+
