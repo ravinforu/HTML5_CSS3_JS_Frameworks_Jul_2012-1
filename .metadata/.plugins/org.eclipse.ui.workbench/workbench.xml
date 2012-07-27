@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="44" version="2.0">
+<workbench progressCount="56" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="1024" x="-220" y="220">
 <fastViewData fastViewLocation="1024">
@@ -10,7 +10,7 @@
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="274" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="122" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="91" y="22"/>
@@ -27,7 +27,7 @@
 <coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -36,36 +36,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.ui.DefaultTextEditor" name="banca.txt" partName="banca.txt" path="C:/Users/prabhu.E4LJBSL3AUMKO/Dropbox/Training_Programs/HTML5_WS/HTML5_CSS3_JS_Frameworks_Jul_2012/Day01/WebContent/banca.txt" title="banca.txt" tooltip="Day01/WebContent/banca.txt" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Day01/WebContent/banca.txt"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="16" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.wst.html.core.htmlsource.source" name="ajax.html" partName="ajax.html" path="C:/Users/prabhu.E4LJBSL3AUMKO/Dropbox/Training_Programs/HTML5_WS/HTML5_CSS3_JS_Frameworks_Jul_2012/Day01/WebContent/ajax.html" title="ajax.html" tooltip="Day01/WebContent/ajax.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Day01/WebContent/ajax.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="152" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="server.jsp" partName="server.jsp" path="C:/Users/prabhu.E4LJBSL3AUMKO/Dropbox/Training_Programs/HTML5_WS/HTML5_CSS3_JS_Frameworks_Jul_2012/Day01/WebContent/server.jsp" title="server.jsp" tooltip="Day01/WebContent/server.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Day01/WebContent/server.jsp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="82" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.wst.html.core.htmlsource.source" name="ajax2.html" partName="ajax2.html" path="C:/Users/prabhu.E4LJBSL3AUMKO/Dropbox/Training_Programs/HTML5_WS/HTML5_CSS3_JS_Frameworks_Jul_2012/Day01/WebContent/ajax2.html" title="ajax2.html" tooltip="Day01/WebContent/ajax2.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Day01/WebContent/ajax2.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="579" selectionTopPixel="437"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jst.jsp.core.jspsource.source" name="time.jsp" partName="time.jsp" path="C:/Users/prabhu.E4LJBSL3AUMKO/Dropbox/Training_Programs/HTML5_WS/HTML5_CSS3_JS_Frameworks_Jul_2012/Day01/WebContent/time.jsp" title="time.jsp" tooltip="Day01/WebContent/time.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Day01/WebContent/time.jsp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="49" selectionTopPixel="0"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -73,9 +47,6 @@
 </view>
 <view id="org.eclipse.ui.views.AllMarkersView" partName="Markers">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.allSeverityField" categoryGroup="org.eclipse.ui.ide.type" markerContentGenerator="org.eclipse.ui.ide.allMarkersGenerator" partName="Markers">
-<expanded>
-<category IMemento.internal.id="Java Exception Breakpoints (2 items)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.allSeverityField="300" org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.allSeverityField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -92,8 +63,8 @@
 </view>
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
 </views>
-<perspectives activePart="org.eclipse.jst.jsp.core.jspsource.source" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
-<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
+<perspectives activePart="org.eclipse.ui.views.AllMarkersView" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
@@ -151,26 +122,20 @@
 <perspective_action id="org.eclipse.wst.web.ui.webDevPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.views.AllMarkersView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.wst.server.ui.ServersView"/>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViews>
-<view id="org.eclipse.ui.navigator.ProjectExplorer" ratio="0.2992126"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" ratio="0.29896906"/>
 </fastViews>
-<fastViewBars>
-<fastViewBar fastViewLocation="1024" id="bottomRight" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
-<fastViews>
-<view id="org.eclipse.ui.views.AllMarkersView" ratio="0.3"/>
-<view id="org.eclipse.ui.views.PropertySheet" ratio="0.3"/>
-<view id="org.eclipse.wst.server.ui.ServersView" ratio="0.3"/>
-<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" ratio="0.3"/>
-<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" ratio="0.3"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="topLeft">
 <folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackagesView" label="LabelNotFound"/>
@@ -187,19 +152,26 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottomRight" ratio="0.951505" ratioLeft="569" ratioRight="29" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.views.AllMarkersView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
-<page content="org.eclipse.wst.server.ui.ServersView" label="LabelNotFound"/>
-<page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="LabelNotFound"/>
-<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.ui.views.AllMarkersView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.AllMarkersView" label="Markers"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
+<page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="Data Source Explorer"/>
+<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="Snippets"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="topRight" ratio="0.7" ratioLeft="525" ratioRight="225" relationship="2" relative="org.eclipse.ui.editorss">
@@ -210,177 +182,14 @@
 </folder>
 </info>
 </mainWindow>
+<hiddenWindow height="250" width="150" x="41" y="717">
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+</hiddenWindow>
 </layout>
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/Day01/WebContent/index.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/Day01/WebContent/game.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/Day01/WebContent/lab02.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/Day01/WebContent/lab02UsingJSON.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/Day01/WebContent/jq1.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/Day01/WebContent/lab03.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/Day01/WebContent/jq2.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/Day01/WebContent/lab04.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Day01/WebContent/banca.txt"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/Day01/WebContent/ajax.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/Day01/WebContent/server.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/Day01/WebContent/ajax2.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/Day01/WebContent/time.jsp"/>
-</editors>
-<item historyLabel="game.js" index="1">
-<position info="not_deleted" x="22" y="0"/>
-</item>
-<item historyLabel="game.js" index="1">
-<position info="not_deleted" x="446" y="0"/>
-</item>
-<item historyLabel="game.js" index="1">
-<position info="not_deleted" x="63" y="0"/>
-</item>
-<item historyLabel="game.js" index="1">
-<position info="not_deleted" x="108" y="0"/>
-</item>
-<item historyLabel="game.js" index="1">
-<position info="not_deleted" x="141" y="0"/>
-</item>
-<item historyLabel="game.js" index="1">
-<position info="not_deleted" x="191" y="0"/>
-</item>
-<item historyLabel="game.js" index="1">
-<position info="not_deleted" x="310" y="0"/>
-</item>
-<item historyLabel="lab02.html" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="lab02.html" index="2">
-<position info="not_deleted" x="65" y="0"/>
-</item>
-<item historyLabel="game.js" index="1">
-<position info="not_deleted" x="310" y="0"/>
-</item>
-<item historyLabel="lab02.html" index="2">
-<position info="not_deleted" x="65" y="0"/>
-</item>
-<item historyLabel="game.js" index="1">
-<position info="not_deleted" x="310" y="0"/>
-</item>
-<item historyLabel="lab02.html" index="2">
-<position info="not_deleted" x="65" y="0"/>
-</item>
-<item historyLabel="lab02UsingJSON.html" index="3">
-<position info="not_deleted" x="430" y="0"/>
-</item>
-<item historyLabel="game.js" index="1">
-<position info="not_deleted" x="245" y="197"/>
-</item>
-<item historyLabel="lab02UsingJSON.html" index="3">
-<position info="not_deleted" x="33" y="0"/>
-</item>
-<item historyLabel="game.js" index="1">
-<position info="not_deleted" x="245" y="197"/>
-</item>
-<item historyLabel="game.js" index="1">
-<position/>
-</item>
-<item historyLabel="lab02.html" index="2">
-<position info="not_deleted" x="112" y="0"/>
-</item>
-<item historyLabel="game.js" index="1">
-<position info="not_deleted" x="210" y="0"/>
-</item>
-<item historyLabel="jq1.html" index="4">
-<position info="not_deleted" x="579" y="0"/>
-</item>
-<item historyLabel="index.html" index="0">
-<position info="not_deleted" x="177" y="0"/>
-</item>
-<item historyLabel="jq1.html" index="4">
-<position info="not_deleted" x="579" y="0"/>
-</item>
-<item historyLabel="index.html" index="0">
-<position info="not_deleted" x="129" y="0"/>
-</item>
-<item historyLabel="jq1.html" index="4">
-<position info="not_deleted" x="348" y="0"/>
-</item>
-<item historyLabel="lab03.html" index="5">
-<position info="not_deleted" x="1311" y="0"/>
-</item>
-<item historyLabel="jq1.html" index="4">
-<position info="not_deleted" x="34" y="39"/>
-</item>
-<item historyLabel="lab03.html" index="5">
-<position info="not_deleted" x="1061" y="0"/>
-</item>
-<item historyLabel="jq2.html" index="6">
-<position info="not_deleted" x="516" y="0"/>
-</item>
-<item historyLabel="lab03.html" index="5">
-<position info="not_deleted" x="1061" y="0"/>
-</item>
-<item historyLabel="jq2.html" index="6">
-<position info="not_deleted" x="523" y="0"/>
-</item>
-<item historyLabel="lab03.html" index="5">
-<position info="not_deleted" x="1061" y="0"/>
-</item>
-<item historyLabel="jq2.html" index="6">
-<position info="not_deleted" x="523" y="0"/>
-</item>
-<item historyLabel="lab03.html" index="5">
-<position info="not_deleted" x="148" y="0"/>
-</item>
-<item historyLabel="jq2.html" index="6">
-<position info="not_deleted" x="90" y="0"/>
-</item>
-<item historyLabel="lab04.html" index="7">
-<position info="not_deleted" x="163" y="0"/>
-</item>
-<item historyLabel="banca.txt" index="8">
-<position info="not_deleted" x="16" y="0"/>
-</item>
-<item historyLabel="ajax.html" index="9">
-<position info="not_deleted" x="152" y="0"/>
-</item>
-<item historyLabel="server.jsp" index="10">
-<position info="not_deleted" x="84" y="0"/>
-</item>
-<item historyLabel="server.jsp" index="10">
-<position info="not_deleted" x="82" y="0"/>
-</item>
-<item historyLabel="ajax2.html" index="11">
-<position info="not_deleted" x="209" y="0"/>
-</item>
-<item historyLabel="server.jsp" index="10">
-<position info="not_deleted" x="82" y="0"/>
-</item>
-<item historyLabel="ajax2.html" index="11">
-<position info="not_deleted" x="620" y="0"/>
-</item>
-<item historyLabel="time.jsp" index="12">
-<position info="not_deleted" x="49" y="0"/>
-</item>
-<item historyLabel="ajax2.html" index="11">
-<position info="not_deleted" x="620" y="0"/>
-</item>
-<item historyLabel="time.jsp" index="12">
-<position info="not_deleted" x="49" y="0"/>
-</item>
-<item historyLabel="ajax2.html" index="11">
-<position info="not_deleted" x="512" y="0"/>
-</item>
-<item historyLabel="time.jsp" index="12">
-<position info="not_deleted" x="49" y="0"/>
-</item>
-<item historyLabel="ajax2.html" index="11">
-<position info="not_deleted" x="579" y="0"/>
-</item>
-<item active="true" historyLabel="time.jsp" index="12">
-<position info="not_deleted" x="49" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -399,6 +208,39 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="storage.html" tooltip="jQM1/WebContent/storage.html">
+<persistable path="/jQM1/WebContent/storage.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="login.jsp" tooltip="jQM1/WebContent/login.jsp">
+<persistable path="/jQM1/WebContent/login.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="lab06.html" tooltip="jQM1/WebContent/lab06.html">
+<persistable path="/jQM1/WebContent/lab06.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index.html" tooltip="jQM1/WebContent/index.html">
+<persistable path="/jQM1/WebContent/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="check.jsp" tooltip="Day02/WebContent/check.jsp">
+<persistable path="/Day02/WebContent/check.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="lab05.html" tooltip="Day02/WebContent/lab05.html">
+<persistable path="/Day02/WebContent/lab05.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="cities.jsp" tooltip="Day02/WebContent/cities.jsp">
+<persistable path="/Day02/WebContent/cities.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="countries.jsp" tooltip="Day02/WebContent/countries.jsp">
+<persistable path="/Day02/WebContent/countries.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="json.html" tooltip="Day02/WebContent/json.html">
+<persistable path="/Day02/WebContent/json.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="server.jsp" tooltip="Day02/WebContent/server.jsp">
+<persistable path="/Day02/WebContent/server.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="ajaxjson.html" tooltip="Day02/WebContent/ajaxjson.html">
+<persistable path="/Day02/WebContent/ajaxjson.html"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="time.jsp" tooltip="Day01/WebContent/time.jsp">
 <persistable path="/Day01/WebContent/time.jsp"/>
 </file>
@@ -410,39 +252,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="ajax.html" tooltip="Day01/WebContent/ajax.html">
 <persistable path="/Day01/WebContent/ajax.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="banca.txt" tooltip="Day01/WebContent/banca.txt">
-<persistable path="/Day01/WebContent/banca.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="lab04.html" tooltip="Day01/WebContent/lab04.html">
-<persistable path="/Day01/WebContent/lab04.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="jq2.html" tooltip="Day01/WebContent/jq2.html">
-<persistable path="/Day01/WebContent/jq2.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="lab03.html" tooltip="Day01/WebContent/lab03.html">
-<persistable path="/Day01/WebContent/lab03.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="jq1.html" tooltip="Day01/WebContent/jq1.html">
-<persistable path="/Day01/WebContent/jq1.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="lab02UsingJSON.html" tooltip="Day01/WebContent/lab02UsingJSON.html">
-<persistable path="/Day01/WebContent/lab02UsingJSON.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="lab02.html" tooltip="Day01/WebContent/lab02.html">
-<persistable path="/Day01/WebContent/lab02.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="game.js" tooltip="Day01/WebContent/game.js">
-<persistable path="/Day01/WebContent/game.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="ooJS.html" tooltip="Day01/WebContent/ooJS.html">
-<persistable path="/Day01/WebContent/ooJS.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="lab01.html" tooltip="Day01/WebContent/lab01.html">
-<persistable path="/Day01/WebContent/lab01.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index.html" tooltip="Day01/WebContent/index.html">
-<persistable path="/Day01/WebContent/index.html"/>
 </file>
 </mruList>
 </workbench>
