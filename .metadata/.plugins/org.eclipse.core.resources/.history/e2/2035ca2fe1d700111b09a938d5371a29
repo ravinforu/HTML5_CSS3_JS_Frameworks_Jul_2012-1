@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-1.7.2.js"></script>
+	<script>
+		function getTemperature(){
+			var url = "stpi/reporter/summary/" + $("#cityText").val();
+			$.getJSON(url,function(response){
+				$("#results").text(response.temperature);
+			});
+		}
+		$().ready(function(){
+			$("#getTempBtn").on("click",getTemperature);
+		});
+	</script>
+</head>
+<body>
+	City <input type="text" id="cityText">
+	<input type="button" value="Get Temperature" id="getTempBtn">
+	<h1 id="results"></h1>
+</body>
+</html>

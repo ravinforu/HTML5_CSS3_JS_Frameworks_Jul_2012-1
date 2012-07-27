@@ -1,0 +1,13 @@
+package com.durasoft;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+
+@Path("/reporter")
+public class WeatherReporter {
+	
+	@GET
+	public String getTemperature(String city){
+		return "Temperature of " + city + " is " + Math.random()*100;
+	}
+}

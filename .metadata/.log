@@ -5254,3 +5254,18 @@ java.lang.ArrayIndexOutOfBoundsException: 11
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2012-07-27 16:47:17.338
+!MESSAGE Could not publish server configuration: C:\Users\prabhu.E4LJBSL3AUMKO\Dropbox\Training_Programs\HTML5_WS\HTML5_CSS3_JS_Frameworks_Jul_2012\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\conf\server.xml (The requested operation cannot be performed on a file with a user-mapped section open).
+!STACK 0
+java.io.IOException: C:\Users\prabhu.E4LJBSL3AUMKO\Dropbox\Training_Programs\HTML5_WS\HTML5_CSS3_JS_Frameworks_Jul_2012\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\conf\server.xml (The requested operation cannot be performed on a file with a user-mapped section open)
+	at org.eclipse.jst.server.tomcat.core.internal.xml.XMLUtil.save(XMLUtil.java:345)
+	at org.eclipse.jst.server.tomcat.core.internal.xml.Factory.save(Factory.java:129)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatVersionHelper.localizeConfiguration(TomcatVersionHelper.java:732)
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat70Configuration.localizeConfiguration(Tomcat70Configuration.java:708)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:242)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:948)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3087)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

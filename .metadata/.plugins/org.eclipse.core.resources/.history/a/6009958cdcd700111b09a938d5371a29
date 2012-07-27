@@ -1,0 +1,22 @@
+package com.durasoft;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+
+@Path("/reporter")
+public class WeatherReporter {
+
+	@GET
+	public String getInfo(){
+		return "This is WeatherReporter service";
+	}
+	
+	
+	
+	/*@GET
+	@Path("{city}")
+	public String getTemperature(@PathParam("city") String city){
+		return "Temperature of " + city + " is " + Math.random()*100;
+	}*/
+}
