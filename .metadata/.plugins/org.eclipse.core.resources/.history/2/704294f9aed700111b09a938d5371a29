@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function createTbl(txn){
+			var query = "create table if not exists " + 
+				"persons(id unique,name,age)";
+			txn.executeSql(query);
+		}
+		var db = openDatabase("Sella","Training db","1.0",1000000);
+		db.transaction(createTbl);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

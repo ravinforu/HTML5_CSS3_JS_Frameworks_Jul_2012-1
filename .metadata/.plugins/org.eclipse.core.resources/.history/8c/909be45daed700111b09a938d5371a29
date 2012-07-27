@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var db = openDatabase("Sella","Training db","1.0",1000000);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
